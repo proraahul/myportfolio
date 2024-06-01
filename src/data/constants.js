@@ -337,8 +337,7 @@ export const projects = [
     date: "Apr 2023 - May 2023",
     description:
       "Discover your next favorite film with our JavaScript Movie App, a sleek and dynamic platform that brings the world of cinema to your fingertips. Powered by the MovieDB API, our app offers a comprehensive collection of movies, from the latest blockbusters to timeless classics. Enjoy an intuitive search functionality that allows you to find movies by title, genre, or popularity, ensuring you never miss out on a great watch. Dive into detailed movie information, including synopses, ratings, and cast lists, all presented in a user-friendly interface designed for an exceptional browsing experience.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/234602896-a1bd8bcc-b72b-4821-83d6-8ad885bf435e.png",
+    image: MovieWeb,
     tags: ["HTML", "CSS", "JAVASCRIPT"],
     category: "javascript",
     github: "https://github.com/proraahul/movie-app",
@@ -381,8 +380,7 @@ export const projects = [
     date: "Jan 2023 - Mar 2023",
     description:
       "Welcome to Mynta, a sleek and dynamic e-commerce clone built with React and Redux. Our platform showcases efficient state management using Redux, ensuring a seamless and responsive user experience. From browsing through products to managing your cart and checkout, every interaction is optimized for performance. Redux centralizes the application's state, making it easy to manage and scale, while React provides a fast, component-based user interface. Experience the power of modern web development with our Mynta clone, where functionality meets elegance.",
-    image:
-      "https://github.com/rishavchanda/Brain-Tumor-Detection/raw/main/Readme_resource/Image2.png",
+    image: ,
     tags: ["REACT", "REDUX", "REACT-REDUX"],
     category: "react-redux",
     github: "https://github.com/proraahul/react-myntra-clone",
@@ -406,8 +404,7 @@ export const projects = [
     date: "Jun 2023 - Jul 2023",
     description:
       "Welcome to React NEWS Web, a modern and dynamic news platform built with React. Our site fetches the latest news from a reliable News API using Axios for efficient data retrieval. With the power of Tailwind CSS, the site boasts a clean and responsive design, ensuring a pleasant user experience across all devices. The news articles are thoughtfully categorized, allowing users to easily browse and find the information they are interested in. Stay informed with the latest updates in a seamless and visually appealing way with React NEWS Web.",
-    image:
-      "https://user-images.githubusercontent.com/64485885/255237090-cf798a2c-1b41-4bb7-b904-b5353a1f08e8.png",
+    image: ,
     tags: ["REACTJS", "TAILWIND CSS", "AXIOS", "NEWS API"],
     category: "reactjs",
     github: "https://github.com/proraahul/news-web",
