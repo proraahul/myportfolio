@@ -380,7 +380,7 @@ export const projects = [
     date: "Jan 2023 - Mar 2023",
     description:
       "Welcome to Mynta, a sleek and dynamic e-commerce clone built with React and Redux. Our platform showcases efficient state management using Redux, ensuring a seamless and responsive user experience. From browsing through products to managing your cart and checkout, every interaction is optimized for performance. Redux centralizes the application's state, making it easy to manage and scale, while React provides a fast, component-based user interface. Experience the power of modern web development with our Mynta clone, where functionality meets elegance.",
-    image: ,
+    image: "",
     tags: ["REACT", "REDUX", "REACT-REDUX"],
     category: "react-redux",
     github: "https://github.com/proraahul/react-myntra-clone",
@@ -404,7 +404,7 @@ export const projects = [
     date: "Jun 2023 - Jul 2023",
     description:
       "Welcome to React NEWS Web, a modern and dynamic news platform built with React. Our site fetches the latest news from a reliable News API using Axios for efficient data retrieval. With the power of Tailwind CSS, the site boasts a clean and responsive design, ensuring a pleasant user experience across all devices. The news articles are thoughtfully categorized, allowing users to easily browse and find the information they are interested in. Stay informed with the latest updates in a seamless and visually appealing way with React NEWS Web.",
-    image: ,
+    image: "",
     tags: ["REACTJS", "TAILWIND CSS", "AXIOS", "NEWS API"],
     category: "reactjs",
     github: "https://github.com/proraahul/news-web",
