@@ -7,6 +7,10 @@
     font-family: 'Poppins', sans-serif;
     
 }
+*::selection{
+  background-color: rgb(133, 76, 230);
+  color: black;
+}
 
 html{
   scroll-behavior: smooth;

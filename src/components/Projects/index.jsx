@@ -5,14 +5,16 @@ import ProjectCard from '../Cards/ProjectCards'
 import { projects } from '../../data/constants'
 
 
-const Projects = ({openModal,setOpenModal}) => {
+
+const Projects = ({openModal, setOpenModal}) => {
   const [toggle, setToggle] = useState('all');
+
   return (
-    <Container id="projects">
+    <Container>
       <Wrapper>
         <Title>Projects</Title>
         <Desc>
-          I have worked on a wide range of projects. From web apps to android apps. Here are some of my projects.
+          I have worked on a wide range of projects. Here are some of my projects.
         </Desc>
         <ToggleButtonGroup >
           {toggle === 'all' ?
@@ -21,22 +23,34 @@ const Projects = ({openModal,setOpenModal}) => {
             <ToggleButton value="all" onClick={() => setToggle('all')}>All</ToggleButton>
           }
           <Divider />
-          {toggle === 'web app' ?
-            <ToggleButton active value="web app" onClick={() => setToggle('web app')}>ReactJs</ToggleButton>
+          {toggle === 'design' ?
+            <ToggleButton active value="design" onClick={() => setToggle('design')}>Design</ToggleButton>
             :
-            <ToggleButton value="web app" onClick={() => setToggle('web app')}>ReactJs</ToggleButton>
+            <ToggleButton value="design" onClick={() => setToggle('design')}>Design</ToggleButton>
           }
           <Divider />
-          {toggle === 'android app' ?
-            <ToggleButton active value="android app" onClick={() => setToggle('android app')}>Javascript</ToggleButton>
+          {toggle === 'reactjs' ?
+            <ToggleButton active value="reactjs" onClick={() => setToggle('Design')}>ReactJs</ToggleButton>
             :
-            <ToggleButton value="android app" onClick={() => setToggle('android app')}>Javascript</ToggleButton>
+            <ToggleButton value="reactjs" onClick={() => setToggle('reactjs')}>ReactJs</ToggleButton>
           }
           <Divider />
-          {toggle === 'machine learning' ?
-            <ToggleButton active value="machine learning" onClick={() => setToggle('machine learning')}>React-Redux</ToggleButton>
+          {toggle === 'javascript' ?
+            <ToggleButton active value="javascript" onClick={() => setToggle('javascript')}>Javascript</ToggleButton>
             :
-            <ToggleButton value="machine learning" onClick={() => setToggle('machine learning')}>React-Redux</ToggleButton>
+            <ToggleButton value="javascript" onClick={() => setToggle('javascript')}>Javascript</ToggleButton>
+          }
+          <Divider />
+          {toggle === 'react-redux' ?
+            <ToggleButton active value="react-redux" onClick={() => setToggle('react-redux')}>React-Redux</ToggleButton>
+            :
+            <ToggleButton value="react-redux" onClick={() => setToggle('react-redux')}>React-Redux</ToggleButton>
+          }
+           <Divider />
+          {toggle === 'upcoming' ?
+            <ToggleButton active value="upcoming" onClick={() => setToggle('upcoming')}>Upcoming</ToggleButton>
+            :
+            <ToggleButton value="upcoming" onClick={() => setToggle('upcoming')}>Upcoming</ToggleButton>
           }
         </ToggleButtonGroup>
         <CardContainer>

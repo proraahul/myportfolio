@@ -1,13 +1,14 @@
-import React from 'react'
-import styled from 'styled-components'
+import { FaGithub } from "react-icons/fa";
+import { FaGlobe } from "react-icons/fa";
+import styled from 'styled-components';
 
 
 const Button = styled.button`
     display: none;
     width: 100%;
     padding: 10px;
-    background-color: ${({ theme }) => theme.white};
-    color: ${({ theme }) => theme.text_black};
+    background-color: white;
+    color: black;
     font-size: 14px;
     font-weight: 700;
     border: none;
@@ -93,7 +94,6 @@ const Date = styled.div`
     }
 `
 
-
 const Description = styled.div`
     font-weight: 400;
     color: ${({ theme }) => theme.text_secondary};
@@ -121,26 +121,50 @@ const Avatar = styled.img`
     border: 3px solid ${({ theme }) => theme.card};
 `
 
-const ProjectCards = ({project,setOpenModal}) => {
+const LinkCard = styled.div`
+    width: 100%;
+    display: flex;
+    align-items: center;
+`
+
+const LinkIcon = styled.a`
+   color: rgb(133, 76, 230); 
+    font-size: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+    :hover{
+        color: white;
+    }
+`
+
+const ProjectCards = ({ project, setOpenModal }) => {
     return (
-        <Card onClick={() => setOpenModal({state: true, project: project})}>
-            <Image src={project.image}/>
+        <Card onClick={() => setOpenModal({ state: true, project: project })}  
+        style={{
+            cursor: project.category == 'upcoming'? 'none' : 'pointer',
+            opacity: project.category == 'upcoming'? 0.5 : 1
+            }}>
+            <Image src={project.image} />
             <Tags>
                 {project.tags?.map((tag, index) => (
-                <Tag key={index}>{tag}</Tag>
+                    <Tag key={index}>{tag}</Tag>
                 ))}
             </Tags>
             <Details>
                 <Title>{project.title}</Title>
-                <Date>{project.date}</Date>
+                {/* <Date>{project.date}</Date> */}
                 <Description>{project.description}</Description>
             </Details>
             <Members>
-                {project.member?.map((member,i) => (
-                    <Avatar src={member.img} key={i}/>
+                {project.member?.map((member, i) => (
+                    <Avatar src={member.img} key={i} />
                 ))}
             </Members>
             {/* <Button>View Project</Button> */}
+            <LinkCard>
+                <LinkIcon href={project.github} target={"_black"}><FaGithub /></LinkIcon>
+                <LinkIcon href={project.webapp} target={"_black"}><FaGlobe /></LinkIcon>
+            </LinkCard>
         </Card>
     )
 }
